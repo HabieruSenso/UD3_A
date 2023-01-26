@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/blankFragment">
+
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.utad.app.BlankFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_blank" >
+        <action
+            android:id="@+id/action_blankFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_blankFragment_to_secondHomeFragment"
+            app:destination="@id/secondHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.utad.app.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <argument
+            android:name="user"
+            app:argType="com.utad.app.User" />
+        <action
+            android:id="@+id/action_loginFragment_to_blankFragment"
+            app:destination="@id/blankFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.utad.app.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <argument
+            android:name="nombre"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondHomeFragment"
+        android:name="com.utad.app.SecondHomeFragment"
+        android:label="fragment_second_home"
+        tools:layout="@layout/fragment_second_home" />
+    <fragment
+        android:id="@+id/favouriteFragment"
+        android:name="com.utad.app.FavouriteFragment"
+        android:label="fragment_favourite"
+        tools:layout="@layout/fragment_favourite" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.utad.app.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/uploadFragment"
+        android:name="com.utad.app.UploadFragment"
+        android:label="fragment_upload"
+        tools:layout="@layout/fragment_upload" />
+    <fragment
+        android:id="@+id/youFragment"
+        android:name="com.utad.app.YouFragment"
+        android:label="fragment_you"
+        tools:layout="@layout/fragment_you" >
+        <action
+            android:id="@+id/action_youFragment_to_uploadDataFragment"
+            app:destination="@id/uploadDataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/uploadDataFragment"
+        android:name="com.utad.app.UploadDataFragment"
+        android:label="fragment_upload_data"
+        tools:layout="@layout/fragment_upload_data" />
+</navigation>

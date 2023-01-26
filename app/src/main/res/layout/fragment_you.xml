@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".YouFragment"
+    android:background="#EFCFF3"
+    >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/youCardInfo"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TRANSACTIONS"
+        android:textColor="@color/purple_700"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvYouTransacction"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ACCOUNT"
+        android:textColor="@color/purple_700"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvYouAccount"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+
+        />
+
+</LinearLayout>

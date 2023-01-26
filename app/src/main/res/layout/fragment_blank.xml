@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BlankFragment"
+    android:background="@color/black">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fondo"
+        android:layout_alignParentStart="true"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="262dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:src="@drawable/logo"
+        android:background="#DFF2ADF6"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mail"
+            />
+
+        <EditText
+            android:id="@+id/etEnterMail"
+            android:layout_width="187dp"
+            android:layout_height="54dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="96dp"
+            tools:layout_editor_absoluteY="101dp"
+            android:background="#DFDBDB"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contraseña" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+
+            >
+
+            <EditText
+                android:id="@+id/etTuContrasena"
+                android:layout_width="187dp"
+                android:layout_height="54dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="96dp"
+                tools:layout_editor_absoluteY="101dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acceder"
+            android:id="@+id/btLogin"
+            android:backgroundTint="@color/purple_700"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvMensajeAlerta"
+            />
+
+        <Button
+            android:layout_marginTop="40dp"
+            android:id="@+id/btRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rgistrarse"
+            android:backgroundTint="@color/purple_700"
+            />
+    </LinearLayout>
+</FrameLayout>
